@@ -1,0 +1,30 @@
+{
+  "name": "Placeholder",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "next": "beta",
+    "nprogress": "^0.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-flowtype": "^2.30.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "flow-bin": "^0.41.0"
+  }
+}
