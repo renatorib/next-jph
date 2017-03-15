@@ -1,5 +1,9 @@
 {
   "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "extends": [
     "airbnb",
     "plugin:flowtype/recommended"
@@ -11,5 +15,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/require-default-props": [0],
     "import/first": [0],
+    "no-unused-expressions": [0],
+    "arrow-parens": [0],
   }
 }

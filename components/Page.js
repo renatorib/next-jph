@@ -2,13 +2,7 @@
 
 import React from 'react';
 import Head from 'next/head';
-import Router from 'next/router';
-import NProgress from 'nprogress';
-import Meta from './Meta';
-
-Router.onRouteChangeStart = () => NProgress.start();
-Router.onRouteChangeComplete = () => NProgress.done();
-Router.onRouteChangeError = () => NProgress.done();
+import MainHead from './Head';
 
 type Props = {
   children?: any,
@@ -18,7 +12,8 @@ type Props = {
 
 const Page = ({ children, title, className = '', ...restProps }: Props) => (
   <div className={`page ${className}`} {...restProps}>
-    <Meta />
+    <MainHead />
+
     <Head>
       <title>{title || 'Placeholder'}</title>
     </Head>
