@@ -10,8 +10,10 @@ Next JPH is an example app made with [JsonPlaceholder](http://jsonplaceholder.ty
 **See the app running at `now`**: http://jph.now.sh
 
 ### Why?
-This is a project I made to learn more about used stack. Also, is a good reference to newcommers in these technologies.  
-Feel free to contribute if you find any mistake I've made, or you want to improve the application.
+This is a project I've made to learn more about the used stack.  
+Also, is a good reference to newcommers in these technologies.  
+
+Feel free to contribute if you find any mistake I've made, or if you want to improve the application.
 
 
 ## Development
