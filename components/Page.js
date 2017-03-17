@@ -2,22 +2,23 @@
 
 import React from 'react';
 import Head from 'next/head';
-import MainHead from './Head';
+import NProgress from 'nprogress';
+import Router from 'next/router';
+
+Router.onRouteChangeStart = () => NProgress.start();
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 type Props = {
   children?: any,
   title?: string,
-  className?: string,
 };
 
-const Page = ({ children, title, className = '', ...restProps }: Props) => (
-  <div className={`page ${className}`} {...restProps}>
-    <MainHead />
-
+const Page = ({ children, title, ...restProps }: Props) => (
+  <div {...restProps}>
     <Head>
       <title>{title || 'Placeholder'}</title>
     </Head>
-
     {children}
   </div>
 );

@@ -5,10 +5,14 @@
     "build": "next build",
     "start": "next start",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
-    "test": "ava"
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.24.0",
+    "jest": "^19.0.2",
+    "lodash.shuffle": "^4.2.0",
     "next": "beta",
     "nprogress": "^0.2.0",
     "react": "^15.4.2",
@@ -19,7 +23,6 @@
     "styled-tools": "^0.1.4"
   },
   "devDependencies": {
-    "ava": "^0.18.2",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "eslint": "^3.17.1",
@@ -30,8 +33,5 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "flow-bin": "^0.41.0"
-  },
-  "ava": {
-    "babel": "inherit"
   }
 }
