@@ -1,5 +1,7 @@
 # Next.js JsonPlaceholder
 [JsonPlaceholder](http://jsonplaceholder.typicode.com/) sample app made with [Next.js](http://github.com/zeit/next.js).  
+  
+See the app running at now: http://jph.now.sh
 
 ## Development
 First of all, install dependencies:
